@@ -17,9 +17,11 @@
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
+apply plugin: 'maven'
 
 /* This sets the needed maven repositories */
 repositories {
+    mavenLocal()
     mavenCentral() // The default maven repo
 }
 
@@ -46,6 +48,12 @@ sourceSets {
 
 
 
+configurations {
+    deployerJars
+}
+
+
+
 dependencies {
 
     /*
@@ -63,6 +71,36 @@ dependencies {
     testCompile(
             [group: 'junit', name: 'junit', version: '4.8.1'],
     )
+
+    /*
+    Add the JAR to our own Maven repository.
+    Other versions do not seem to work.
+    */
+    deployerJars(
+            [group: 'org.apache.maven.wagon', name: 'wagon-ssh', version: '2.2']
+    )
 }
 
 
+
+uploadArchives {
+    repositories.mavenDeployer {
+        configuration = configurations.deployerJars
+        pom.version = '0.1-SNAPSHOT'
+        pom.artifactId = 'ubercharts'
+        uniqueVersion = false
+        // $repourl, $username, and $password must be defined in ~/.gradle/gradle.properties
+        repository(url: repourl) {
+            authentication(userName: username, password: password)
+            releases()
+            snapshots()
+            proxy()
+        }
+        snapshotRepository(url: repourl) {
+            authentication(userName: username, password: password)
+            releases()
+            snapshots()
+            proxy()
+        }
+    }
+}
