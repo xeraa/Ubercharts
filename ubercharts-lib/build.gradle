@@ -53,8 +53,8 @@ dependencies {
     */
     compile(
             [group: 'org.apache.wicket', name: 'wicket', version: '1.4.15'],
-            [group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.5.8'],
-            [group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.6.4']
+            [group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.6.4'],
+            [group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.4']
     )
 
     /*
