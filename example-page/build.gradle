@@ -13,16 +13,21 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 */
+
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'jetty'
+
+
 
 /* This sets the needed maven repositories */
 repositories {
     mavenLocal()
     mavenCentral() // The default maven repo
 }
+
+
 
 /*
   It's a basic concept of Wicket, that html files are located alongside
@@ -49,23 +54,17 @@ sourceSets {
 
 dependencies {
 
-    /*
-     These are the dependencies, which are needed to compile and run the project.
-    */
+    /* These are the dependencies, which are needed to compile and run the project. */
     compile(
             project(':ubercharts-lib'),
             [group: 'org.apache.wicket', name: 'wicket', version: '1.4.15'],
             [group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.6.4'],
     )
 
-    /*
-     These are the dependencies, which are needed to test the project.
-    */
+    /* These are the dependencies, which are needed to test the project. */
     testCompile(
             [group: 'org.mortbay.jetty', name: 'jetty-util', version: '6.1.25'],
             [group: 'org.mortbay.jetty', name: 'jetty-management', version: '6.1.25'],
             [group: 'junit', name: 'junit', version: '4.8.1'],
     )
 }
-
-

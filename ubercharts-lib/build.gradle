@@ -19,11 +19,15 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 
+
+
 /* This sets the needed maven repositories */
 repositories {
     mavenLocal()
     mavenCentral() // The default maven repo
 }
+
+
 
 /*
   It's a basic concept of Wicket, that html files are located alongside
@@ -56,25 +60,19 @@ configurations {
 
 dependencies {
 
-    /*
-     These are the dependencies, which are needed to compile and run the project.
-    */
+    /* These are the dependencies, which are needed to compile and run the project. */
     compile(
             [group: 'org.apache.wicket', name: 'wicket', version: '1.4.15'],
             [group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.6.4'],
             [group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.4']
     )
 
-    /*
-     These are the dependencies, which are needed to test the project.
-    */
+    /* These are the dependencies, which are needed to test the project. */
     testCompile(
             [group: 'junit', name: 'junit', version: '4.8.1'],
     )
 
-    /*
-    Add the JAR to our own Maven repository.
-    */
+    /* These are dependencies to add the JAR to our own Maven repository. */
     deployerJars(
             [group: 'org.apache.maven.wagon', name: 'wagon-ssh', version: '2.2']
     )
@@ -88,13 +86,15 @@ uploadArchives {
         pom.version = '0.1-SNAPSHOT'
         pom.artifactId = 'ubercharts'
         uniqueVersion = false
-        // $repourl, $username, and $password must be defined in ~/.gradle/gradle.properties
+
+        /* $repourl, $username, and $password must be defined in ~/.gradle/gradle.properties */
         repository(url: repourl) {
             authentication(userName: username, password: password)
             releases()
             snapshots()
             proxy()
         }
+
         snapshotRepository(url: repourl) {
             authentication(userName: username, password: password)
             releases()
