@@ -54,7 +54,7 @@ dependencies {
     compile(
             project(':ubercharts-lib'),
             [group: 'org.apache.wicket', name: 'wicket', version: '1.4.15'],
-            [group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.5.8'],
+            [group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.6.4'],
     )
 
     /*
