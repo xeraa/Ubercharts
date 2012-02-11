@@ -69,7 +69,7 @@ dependencies {
 
     /* These are the dependencies, which are needed to test the project. */
     testCompile(
-            [group: 'junit', name: 'junit', version: '4.8.1'],
+            [group: 'junit', name: 'junit', version: '4.10'],
     )
 
     /* These are dependencies to add the JAR to our own Maven repository. */
