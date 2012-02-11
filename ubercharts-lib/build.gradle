@@ -74,7 +74,6 @@ dependencies {
 
     /*
     Add the JAR to our own Maven repository.
-    Other versions do not seem to work.
     */
     deployerJars(
             [group: 'org.apache.maven.wagon', name: 'wagon-ssh', version: '2.2']
