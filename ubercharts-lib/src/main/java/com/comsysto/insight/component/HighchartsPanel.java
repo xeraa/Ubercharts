@@ -16,7 +16,6 @@
 
 package com.comsysto.insight.component;
 
-import com.comsysto.insight.model.Highchart;
 import org.apache.wicket.ResourceReference;
 import org.apache.wicket.markup.html.IHeaderContributor;
 import org.apache.wicket.markup.html.IHeaderResponse;
@@ -25,8 +24,10 @@ import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.model.AbstractReadOnlyModel;
 
+import com.comsysto.insight.model.Highchart;
 
 public class HighchartsPanel extends Panel implements IHeaderContributor {
+	private static final long serialVersionUID = -4334873010475917041L;
 
   public HighchartsPanel(String id, final Highchart highcharts) {
     super(id);
@@ -40,12 +41,12 @@ public class HighchartsPanel extends Panel implements IHeaderContributor {
     highcharts.getChart().setRenderTo(chartDiv.getMarkupId());
 
     /*
-    * we inject the script in the component body and not as a header contribution
-    * because the script needs to be called each time the component is refreshed using wicket
-    * ajax support.
+		 * we inject the script in the component body and not as a header
+		 * contribution because the script needs to be called each time the
+		 * component is refreshed using wicket ajax support.
     */
     add(new Label("script", new AbstractReadOnlyModel<String>() {
-      private static final long serialVersionUID = 1L;
+			private static final long serialVersionUID = 7695732603979024344L;
 
       @Override
       public String getObject() {
