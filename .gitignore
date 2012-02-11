@@ -2,6 +2,7 @@
 *.iml
 *.iws
 *.ipr
+*.swp
 .gradle
 build
 target
