@@ -20,6 +20,7 @@ apply plugin: 'jetty'
 
 /* This sets the needed maven repositories */
 repositories {
+    mavenLocal()
     mavenCentral() // The default maven repo
 }
 
