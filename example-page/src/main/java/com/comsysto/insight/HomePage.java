@@ -45,8 +45,6 @@ import com.comsysto.insight.model.options.series.impl.PointSeries;
 /** Homepage */
 public class HomePage extends WebPage {
 
-	private static final long serialVersionUID = 1L;
-
 	/**
 	 * Constructor that is invoked when page is invoked without a session.
 	 * 
