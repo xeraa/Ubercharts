@@ -70,6 +70,29 @@ To start the upload itself, run the following commands:
 
 
 
+## Include via Maven
+
+If you have not yet included the Maven repository to which you have uploaded Ubercharts, include the following in your ``<repositories>`` section:
+
+    <repository>
+        <id>[ID]</id>
+        <name>Private Repository</name>
+        <url>http://[Server URL and path to the repository]</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+
+In the ``<dependencies>`` section add Ubercharts:
+
+    <dependency>
+        <groupId>Ubercharts</groupId>
+        <artifactId>ubercharts</artifactId>
+        <version>0.2-SNAPSHOT</version>
+    </dependency>
+
+
+
 # License
 
 [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
