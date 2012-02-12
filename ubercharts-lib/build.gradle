@@ -74,7 +74,12 @@ dependencies {
 
     /* These are dependencies to add the JAR to our own Maven repository. */
     deployerJars(
-            [group: 'org.apache.maven.wagon', name: 'wagon-ssh', version: '2.2']
+            [group: 'org.apache.maven.wagon', name: 'wagon-ssh', version: '2.2'],
+            [group: 'org.apache.maven.wagon', name: 'wagon-http', version: '2.2'],
+            [group: 'org.apache.maven.wagon', name: 'wagon-ftp', version: '2.2'],
+            [group: 'org.apache.maven.wagon', name: 'wagon-scm', version: '2.2'],
+            [group: 'org.apache.maven.wagon', name: 'wagon-file', version: '2.2'],
+            [group: 'org.apache.maven.wagon', name: 'wagon-webdav', version: '1.0-beta-2']
     )
 }
 
