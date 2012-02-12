@@ -87,11 +87,12 @@ uploadArchives {
         pom.artifactId = 'ubercharts'
         uniqueVersion = false
 
+        /* $username and $password must be defined in ~/.gradle/gradle.properties or via Jenkins' environmental variables (ORG_GRADLE_PROJECT_username) */
         configureAuth = {
            authentication(userName: username, password: password)
         }
 
-        /* $repourl, $username, and $password must be defined in ~/.gradle/gradle.properties */
+        /* $releaseurl and $snapshoturl must be defined in ~/.gradle/gradle.properties or via Jenkins' environmental variables (ORG_GRADLE_PROJECT_releaseurl)  */
         repository(url: releaseurl, configureAuth)
 
         snapshotRepository(url: snapshoturl, configureAuth)
