@@ -83,7 +83,7 @@ abstract public class AbstractSeries<DataType> implements ISeries<DataType> {
 	/** {@link ISeries#setName(String)} */
 	public ISeries<DataType> setName(String pName) {
 		mName = pName;
-		return (ISeries<DataType>) this;
+		return this;
 	}
 
 	/** {@link ISeries#getStack()} */
@@ -94,7 +94,7 @@ abstract public class AbstractSeries<DataType> implements ISeries<DataType> {
 	/** {@link ISeries#setStack(String)} */
 	public ISeries<DataType> setStack(String pStack) {
 		mStack = pStack;
-		return (ISeries<DataType>) this;
+		return this;
 	}
 
 	/** {@link ISeries#getType()} */
@@ -105,7 +105,7 @@ abstract public class AbstractSeries<DataType> implements ISeries<DataType> {
 	/** {@link ISeries#setType(com.comsysto.insight.model.options.ChartType) } */
 	public ISeries<DataType> setType(ChartType pType) {
 		mType = pType;
-		return (ISeries<DataType>) this;
+		return this;
 	}
 
 	/** {@link ISeries#getXAxis()} */
@@ -117,7 +117,7 @@ abstract public class AbstractSeries<DataType> implements ISeries<DataType> {
 	/** {@link ISeries#setXAxis(Integer)} */
 	public ISeries<DataType> setXAxis(Integer pXAxis) {
 		mXAxis = pXAxis;
-		return (ISeries<DataType>) this;
+		return this;
 	}
 
 	/** {@link ISeries#getYAxis()} */
@@ -129,7 +129,7 @@ abstract public class AbstractSeries<DataType> implements ISeries<DataType> {
 	/** {@link ISeries#setYAxis(Integer)} */
 	public ISeries<DataType> setYAxis(Integer pYAxis) {
 		mYAxis = pYAxis;
-		return (ISeries<DataType>) this;
+		return this;
 	}
 
 	/** {@link ISeries#getData()} */

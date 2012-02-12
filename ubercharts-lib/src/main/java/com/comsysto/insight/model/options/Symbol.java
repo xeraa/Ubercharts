@@ -22,6 +22,7 @@ package com.comsysto.insight.model.options;
  */
 public enum Symbol {
 	circle, square, diamond, triangle, triangleDown {
+		@Override
 		public String toString() {
 			return "triangle-down";
 		}
