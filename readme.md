@@ -61,7 +61,10 @@ To upload the library to your own Maven repository, you need to create a custom 
 
 	username=<username>
 	password=<password>
-	repourl=scp://<domain of the server>:<absolute path on the server>
+    releaseurl=<URL>
+    snapshoturl=<URL>
+
+In Jenkins you can use the global environmental variables instead, such as ``ORG_GRADLE_PROJECT_username``.
 
 To start the upload itself, run the following commands:
 
