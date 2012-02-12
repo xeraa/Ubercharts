@@ -19,17 +19,17 @@ package com.comsysto.insight.model.charts;
 import com.comsysto.insight.model.options.ChartType;
 
 /**
- * This is a shorthand for {@code new Chart(Type.line)} or {@code new Chart().setDefaultSeriesType(Type.line)}.
+ * This is a shorthand for {@code new Chart(Type.line)} or
+ * {@code new Chart().setDefaultSeriesType(Type.line)}.
  * <p/>
- * Date: Feb 18, 2011
- * Time: 3:05:29 PM
- *
+ * Date: Feb 18, 2011 Time: 3:05:29 PM
+ * 
  * @author Mohammed El Batya
  * @see Chart
  */
 public class LineChart extends Chart {
 
-    public LineChart() {
-        super(ChartType.line);
-    }
+	public LineChart() {
+		super(ChartType.line);
+	}
 }

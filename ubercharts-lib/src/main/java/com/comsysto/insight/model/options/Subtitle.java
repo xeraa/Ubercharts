@@ -20,54 +20,52 @@ import java.util.Map;
 
 public class Subtitle extends BasicTitle {
 
-    private Boolean mFloating;
-    private VerticalAlign mVerticalAlign;
-    private Integer mX;
-    private Integer mY;
+	private Boolean mFloating;
+	private VerticalAlign mVerticalAlign;
+	private Integer mX;
+	private Integer mY;
 
+	public Subtitle(String pText) {
+		super(pText);
+	}
 
-    public Subtitle(String pText) {
-        super(pText);
-    }
+	public Subtitle(String pText, Align pAlign, Map<String, String> pStyle) {
+		super(pText, pAlign, pStyle);
+	}
 
-    public Subtitle(String pText, Align pAlign, Map<String, String> pStyle) {
-        super(pText, pAlign, pStyle);
-    }
+	public Boolean getFloating() {
+		return mFloating;
+	}
 
-    public Boolean getFloating() {
-        return mFloating;
-    }
+	public Subtitle setFloating(Boolean pFloating) {
+		mFloating = pFloating;
+		return this;
+	}
 
-    public Subtitle setFloating(Boolean pFloating) {
-        mFloating = pFloating;
-        return this;
-    }
+	public VerticalAlign getVerticalAlign() {
+		return mVerticalAlign;
+	}
 
+	public Subtitle setVerticalAlign(VerticalAlign pVerticalAlign) {
+		mVerticalAlign = pVerticalAlign;
+		return this;
+	}
 
-    public VerticalAlign getVerticalAlign() {
-        return mVerticalAlign;
-    }
+	public Integer getX() {
+		return mX;
+	}
 
-    public Subtitle setVerticalAlign(VerticalAlign pVerticalAlign) {
-        mVerticalAlign = pVerticalAlign;
-        return this;
-    }
+	public Subtitle setX(Integer pX) {
+		mX = pX;
+		return this;
+	}
 
-    public Integer getX() {
-        return mX;
-    }
+	public Integer getY() {
+		return mY;
+	}
 
-    public Subtitle setX(Integer pX) {
-        mX = pX;
-        return this;
-    }
-
-    public Integer getY() {
-        return mY;
-    }
-
-    public Subtitle setY(Integer pY) {
-        mY = pY;
-        return this;
-    }
+	public Subtitle setY(Integer pY) {
+		mY = pY;
+		return this;
+	}
 }
