@@ -4,7 +4,7 @@ You can see a live demo of the current version at [http://ubercharts.xeraa.cloud
 
 The JavaDoc is available at [https://xeraa.ci.cloudbees.com/job/ubercharts/javadoc/](https://xeraa.ci.cloudbees.com/job/ubercharts/javadoc/).
 
-For a examples, API descriptions, and anything else code-related, please see the [wiki](https://github.com/xeraa/Ubercharts/wiki).
+For a examples, API descriptions, and anything else code-related, please see the GitHub [wiki](https://github.com/xeraa/Ubercharts/wiki).
 
 Bug reports are more than welcome in [GitHub's bug tracker](https://github.com/xeraa/Ubercharts/issues), as are any [pull requests](https://github.com/xeraa/Ubercharts/pulls).
 
