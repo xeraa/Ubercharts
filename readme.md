@@ -1,3 +1,11 @@
+# Introduction
+
+For a examples, API descriptions, and anything else code-related, please see the [wiki](https://github.com/xeraa/Ubercharts/wiki).
+
+Bug reports are more than welcome in [GitHub's bug tracker](https://github.com/xeraa/Ubercharts/issues). As are any [pull requests](https://github.com/xeraa/Ubercharts/pulls).
+
+# Getting Started
+
 ## Prerequisites
 
 * [Git](http://git-scm.com)
@@ -62,7 +70,7 @@ To start the upload itself, run the following commands:
 
 
 
-## License
+# License
 
 [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
