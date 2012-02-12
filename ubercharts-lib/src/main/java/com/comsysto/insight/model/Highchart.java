@@ -61,7 +61,7 @@ public class Highchart {
 	private Navigation navigation;
 
 	public Highchart() {
-		mapper.getSerializationConfig().setSerializationInclusion(JsonSerialize.Inclusion.NON_NULL);
+		mapper.setSerializationInclusion(JsonSerialize.Inclusion.NON_EMPTY);
 	}
 
 	public Highchart(Chart pChart, ISeries<?>... pSeries) {
