@@ -1,10 +1,45 @@
 # Introduction
 
+You can see a live demo of the current version at [http://ubercharts.xeraa.cloudbees.net](http://ubercharts.xeraa.cloudbees.net).
+
+The JavaDoc is available at [https://xeraa.ci.cloudbees.com/job/ubercharts/javadoc/](https://xeraa.ci.cloudbees.com/job/ubercharts/javadoc/).
+
 For a examples, API descriptions, and anything else code-related, please see the [wiki](https://github.com/xeraa/Ubercharts/wiki).
 
-Bug reports are more than welcome in [GitHub's bug tracker](https://github.com/xeraa/Ubercharts/issues). As are any [pull requests](https://github.com/xeraa/Ubercharts/pulls).
+Bug reports are more than welcome in [GitHub's bug tracker](https://github.com/xeraa/Ubercharts/issues), as are any [pull requests](https://github.com/xeraa/Ubercharts/pulls).
 
-# Getting Started
+You can get [snapshots](https://repository-xeraa.forge.cloudbees.com/snapshot/) and [releases](https://repository-xeraa.forge.cloudbees.com/release/) for Ubercharts. To integrate them into your own POM add the following code (you might want to change the ``<version>``):
+
+    <repositories>
+	    <repository>
+	        <id>xeraa-cloudbees-release</id>
+	        <name>Cloudbees releases of xeraa</name>
+	        <url>dav:https://repository-xeraa.forge.cloudbees.com/release/</url>
+	        <releases>
+	            <enabled>true</enabled>
+	        </releases>
+	    </repository>
+	    <repository>
+	        <id>xeraa-cloudbees-snapshot</id>
+	        <name>Cloudbees snapshots of xeraa</name>
+	        <url>dav:https://repository-xeraa.forge.cloudbees.com/snapshot/</url>
+	        <snapshots>
+	            <enabled>true</enabled>
+	        </snapshots>
+	    </repository>
+    </repositories>
+
+    <dependencies>
+	    <dependency>
+	        <groupId>ubercharts</groupId>
+	        <artifactId>ubercharts</artifactId>
+	        <version>0.2-SNAPSHOT</version>
+	    </dependency>
+    </dependencies>
+
+
+
+# Building
 
 ## Prerequisites
 
@@ -75,24 +110,26 @@ To start the upload itself, run the following commands:
 
 ## Include via Maven
 
-If you have not yet included the Maven repository to which you have uploaded Ubercharts, include the following in your ``<repositories>`` section:
+If you have not yet included the Maven repository to which you have uploaded Ubercharts, include the following in your POM:
 
-    <repository>
-        <id>[ID]</id>
-        <name>Private Repository</name>
-        <url>http://[Server URL and path to the repository]</url>
-        <snapshots>
-            <enabled>true</enabled>
-        </snapshots>
-    </repository>
+    <repositories>
+        <repository>
+            <id>[ID]</id>
+            <name>[Name]</name>
+            <url>[Protocol, server URL, and path to the repository]</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
-In the ``<dependencies>`` section add Ubercharts:
-
-    <dependency>
-        <groupId>Ubercharts</groupId>
-        <artifactId>ubercharts</artifactId>
-        <version>0.2-SNAPSHOT</version>
-    </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>Ubercharts</groupId>
+            <artifactId>ubercharts</artifactId>
+            <version>[version]</version>
+        </dependency>
+    </dependencies>
 
 
 
