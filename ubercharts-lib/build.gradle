@@ -87,19 +87,13 @@ uploadArchives {
         pom.artifactId = 'ubercharts'
         uniqueVersion = false
 
-        /* $repourl, $username, and $password must be defined in ~/.gradle/gradle.properties */
-        repository(url: repourl) {
-            authentication(userName: username, password: password)
-            releases()
-            snapshots()
-            proxy()
+        configureAuth = {
+           authentication(userName: username, password: password)
         }
 
-        snapshotRepository(url: repourl) {
-            authentication(userName: username, password: password)
-            releases()
-            snapshots()
-            proxy()
-        }
+        /* $repourl, $username, and $password must be defined in ~/.gradle/gradle.properties */
+        repository(url: releaseurl, configureAuth)
+
+        snapshotRepository(url: snapshoturl, configureAuth)
     }
 }
