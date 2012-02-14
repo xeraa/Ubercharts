@@ -16,8 +16,8 @@
 
 package com.comsysto.insight;
 
-import org.apache.wicket.PageParameters;
 import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 import com.comsysto.insight.component.HighchartsPanel;
 import com.comsysto.insight.model.Highchart;
@@ -44,6 +44,7 @@ import com.comsysto.insight.model.options.series.impl.PointSeries;
 
 /** Homepage */
 public class HomePage extends WebPage {
+	private static final long serialVersionUID = 5582112825051520878L;
 
 	/**
 	 * Constructor that is invoked when page is invoked without a session.

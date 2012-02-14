@@ -16,13 +16,13 @@
 
 package com.comsysto.insight.component;
 
-import org.apache.wicket.ResourceReference;
 import org.apache.wicket.markup.html.IHeaderContributor;
 import org.apache.wicket.markup.html.IHeaderResponse;
 import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.model.AbstractReadOnlyModel;
+import org.apache.wicket.request.resource.PackageResourceReference;
 
 import com.comsysto.insight.model.Highchart;
 
@@ -66,9 +66,12 @@ public class HighchartsPanel extends Panel implements IHeaderContributor {
 	}
 
 	public void renderHead(IHeaderResponse response) {
-		response.renderJavascriptReference(new ResourceReference(this.getClass(), "jquery.min.js"));
-		response.renderJavascriptReference(new ResourceReference(this.getClass(), "highcharts.js"));
-		response.renderJavascriptReference(new ResourceReference(this.getClass(), "exporting.js"));
+		response.renderJavaScriptReference(new PackageResourceReference(this.getClass(),
+				"jquery.min.js"));
+		response.renderJavaScriptReference(new PackageResourceReference(this.getClass(),
+				"highcharts.js"));
+		response.renderJavaScriptReference(new PackageResourceReference(this.getClass(),
+				"exporting.js"));
 	}
 
 }
