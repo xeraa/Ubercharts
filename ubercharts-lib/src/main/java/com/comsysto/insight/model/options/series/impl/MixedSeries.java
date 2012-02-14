@@ -16,10 +16,10 @@
 
 package com.comsysto.insight.model.options.series.impl;
 
+import java.util.Collection;
+
 import com.comsysto.insight.model.options.Point;
 import com.comsysto.insight.model.options.series.generic.AbstractSeries;
-
-import java.util.Collection;
 
 /**
  * Implementation of {@link AbstractSeries} which represents a mixed array of
@@ -45,7 +45,8 @@ public class MixedSeries extends AbstractSeries<Object[]> {
 
 	/**
 	 * @param pMixedData
-	 * @return
+	 * @return this object for convenient chaining, not a copy
+	 * @see MixedSeries
 	 */
 	public MixedSeries setData(Object[] pMixedData) {
 		mData = pMixedData;

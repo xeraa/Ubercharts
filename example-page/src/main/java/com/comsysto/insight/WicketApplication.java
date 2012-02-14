@@ -19,10 +19,7 @@ package com.comsysto.insight;
 import org.apache.wicket.protocol.http.WebApplication;
 
 /**
- * Application object for your web application. If you want to run this
- * application without deploying, run the Start class.
- * 
- * @see com.comsysto.insight.Start#main(String[])
+ * Application object for your web application.
  */
 public class WicketApplication extends WebApplication {
 	/**
