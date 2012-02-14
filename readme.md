@@ -94,12 +94,10 @@ Beside some other files, this will create beside a project file named ``Uberchar
 
 To upload the library to your own Maven repository, you need to create a custom configuration file in ``~/.gradle/gradle.properties``:
 
-	username=<username>
-	password=<password>
-    releaseurl=<URL>
-    snapshoturl=<URL>
-
-In Jenkins you can use the global environmental variables instead, such as ``ORG_GRADLE_PROJECT_username``.
+	username=[username]
+	password=[password]
+    releaseurl=[URL]
+    snapshoturl=[URL]
 
 To start the upload itself, run the following commands:
 
