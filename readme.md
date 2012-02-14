@@ -10,7 +10,34 @@ Bug reports are more than welcome in [GitHub's bug tracker](https://github.com/x
 
 You can get [snapshots](https://repository-xeraa.forge.cloudbees.com/snapshot/) and [releases](https://repository-xeraa.forge.cloudbees.com/release/) for Ubercharts. To integrate them into your own POM add the following code (you might want to change the ``<version>``):
 
-<script src="https://gist.github.com/1821832.js?file=pom.xml"></script>
+	<repositories>
+	    <repository>
+	        <id>xeraa-cloudbees-release</id>
+	        <name>Cloudbees releases of xeraa</name>
+	        <url>dav:https://repository-xeraa.forge.cloudbees.com/release/</url>
+	        <releases>
+	            <enabled>true</enabled>
+	        </releases>
+	    </repository>
+	    <repository>
+	        <id>xeraa-cloudbees-snapshot</id>
+	        <name>Cloudbees snapshots of xeraa</name>
+	        <url>dav:https://repository-xeraa.forge.cloudbees.com/snapshot/</url>
+	        <snapshots>
+	            <enabled>true</enabled>
+	        </snapshots>
+	    </repository>
+	</repositories>
+	
+	<dependencies>
+	    <dependency>
+	        <groupId>ubercharts</groupId>
+	        <artifactId>ubercharts</artifactId>
+	        <version>0.2-SNAPSHOT</version>
+	    </dependency>
+	</dependencies>
+
+Gist: [https://gist.github.com/1821832#file_pom.xml](https://gist.github.com/1821832#file_pom.xml)
 
 
 
@@ -85,7 +112,26 @@ To start the upload itself, run the following commands:
 
 If you have not yet included the Maven repository to which you have uploaded Ubercharts, include the following in your POM:
 
-<script src="https://gist.github.com/1821940.js?file=pom.xml"></script>
+	<repositories>
+	    <repository>
+	        <id>[ID]</id>
+	        <name>[Name]</name>
+	        <url>[Protocol, server URL, and path to the repository]</url>
+	        <snapshots>
+	            <enabled>true</enabled>
+	        </snapshots>
+	    </repository>
+	</repositories>
+	
+	<dependencies>
+	    <dependency>
+	        <groupId>Ubercharts</groupId>
+	        <artifactId>ubercharts</artifactId>
+	        <version>[version]</version>
+	    </dependency>
+	</dependencies>
+
+Gist: [https://gist.github.com/1821940#file_pom.xml](https://gist.github.com/1821940#file_pom.xml)
 
 
 
