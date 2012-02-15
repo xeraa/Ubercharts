@@ -19,6 +19,8 @@ package com.comsysto.insight.model;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -40,6 +42,8 @@ import com.comsysto.insight.model.options.Tooltip;
 import com.comsysto.insight.model.options.series.generic.ISeries;
 
 public class Highchart {
+
+	private static Logger logger = Logger.getLogger("com.comsysto.insight.model.Highchart");
 
 	private ObjectMapper mapper = new ObjectMapper();
 
@@ -85,8 +89,8 @@ public class Highchart {
 			e.printStackTrace();
 		}
 
-		// dump JSON object
-		System.out.println(json);
+		// Log JSON object
+		logger.log(Level.INFO, json);
 
 		return json;
 	}
