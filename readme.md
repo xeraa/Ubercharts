@@ -32,7 +32,7 @@ You can get [snapshots](https://repository-xeraa.forge.cloudbees.com/snapshot/) 
 	<dependencies>
 	    <dependency>
 	        <groupId>ubercharts</groupId>
-	        <artifactId>ubercharts</artifactId>
+	        <artifactId>ubercharts-lib</artifactId>
 	        <version>0.2-SNAPSHOT</version>
 	    </dependency>
 	</dependencies>
