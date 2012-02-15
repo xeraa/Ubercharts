@@ -21,6 +21,11 @@ apply plugin: 'maven'
 
 
 
+/* We are only working with Java 1.6 or above */
+sourceCompatibility = 1.6
+
+
+
 /* This sets the needed maven repositories */
 repositories {
     mavenLocal()
