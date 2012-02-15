@@ -28,6 +28,7 @@ import com.comsysto.insight.model.options.ChartType;
  * @see Chart
  */
 public class ColumnChart extends Chart {
+	private static final long serialVersionUID = 2520474158578349317L;
 
 	public ColumnChart() {
 		super(ChartType.column);

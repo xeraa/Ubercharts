@@ -28,6 +28,7 @@ import com.comsysto.insight.model.options.ChartType;
  * @see Chart
  */
 public class AreaChart extends Chart {
+	private static final long serialVersionUID = 5016506626580289655L;
 
 	public AreaChart() {
 		super(ChartType.area);

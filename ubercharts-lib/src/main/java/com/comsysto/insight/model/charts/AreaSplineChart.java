@@ -28,6 +28,7 @@ import com.comsysto.insight.model.options.ChartType;
  * @see Chart
  */
 public class AreaSplineChart extends Chart {
+	private static final long serialVersionUID = 3857854840052906967L;
 
 	public AreaSplineChart() {
 		super(ChartType.areaspline);

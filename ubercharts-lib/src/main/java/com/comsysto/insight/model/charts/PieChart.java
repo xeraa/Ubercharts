@@ -28,6 +28,7 @@ import com.comsysto.insight.model.options.ChartType;
  * @see Chart
  */
 public class PieChart extends Chart {
+	private static final long serialVersionUID = 2867517312872203878L;
 
 	public PieChart() {
 		super(ChartType.pie);

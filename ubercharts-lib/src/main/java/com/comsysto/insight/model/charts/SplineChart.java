@@ -28,6 +28,7 @@ import com.comsysto.insight.model.options.ChartType;
  * @see Chart
  */
 public class SplineChart extends Chart {
+	private static final long serialVersionUID = 1905705712159259468L;
 
 	public SplineChart() {
 		super(ChartType.spline);

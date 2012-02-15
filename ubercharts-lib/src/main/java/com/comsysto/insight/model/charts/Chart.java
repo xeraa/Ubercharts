@@ -16,17 +16,19 @@
 
 package com.comsysto.insight.model.charts;
 
+import java.io.Serializable;
+import java.util.Map;
+
 import com.comsysto.insight.model.options.ChartType;
 import com.comsysto.insight.model.options.ZoomType;
-
-import java.util.Map;
 
 /**
  * Date: Feb 18, 2011 Time: 3:16:33 PM
  * 
  * @author Mohammed El Batya
  */
-public class Chart {
+public class Chart implements Serializable {
+	private static final long serialVersionUID = 7778529412304317581L;
 
 	public Chart(ChartType pType) {
 		defaultSeriesType = pType;

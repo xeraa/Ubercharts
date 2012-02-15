@@ -28,6 +28,7 @@ import com.comsysto.insight.model.options.ChartType;
  * @see Chart
  */
 public class ScatterChart extends Chart {
+	private static final long serialVersionUID = -4755701789684239086L;
 
 	public ScatterChart() {
 		super(ChartType.scatter);

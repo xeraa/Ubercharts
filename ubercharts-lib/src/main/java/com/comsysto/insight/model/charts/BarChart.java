@@ -28,6 +28,7 @@ import com.comsysto.insight.model.options.ChartType;
  * @see Chart
  */
 public class BarChart extends Chart {
+	private static final long serialVersionUID = -1758232608485288091L;
 
 	public BarChart() {
 		super(ChartType.bar);

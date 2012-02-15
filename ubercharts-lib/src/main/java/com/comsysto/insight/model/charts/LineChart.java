@@ -28,6 +28,7 @@ import com.comsysto.insight.model.options.ChartType;
  * @see Chart
  */
 public class LineChart extends Chart {
+	private static final long serialVersionUID = 3434413411410976787L;
 
 	public LineChart() {
 		super(ChartType.line);
