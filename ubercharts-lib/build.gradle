@@ -24,7 +24,7 @@ apply plugin: 'maven'
 /* This sets the needed maven repositories */
 repositories {
     mavenLocal()
-    mavenCentral() // The default maven repo
+    mavenCentral()
 }
 
 
@@ -63,7 +63,7 @@ dependencies {
     /* These are the dependencies, which are needed to compile and run the project. */
     compile(
             [group: 'org.apache.wicket', name: 'wicket-core', version: '1.5.4'],
-            [group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.4']
+            [group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.4'],
     )
 
     /* These are the dependencies, which are needed to test the project. */
@@ -78,7 +78,7 @@ dependencies {
             [group: 'org.apache.maven.wagon', name: 'wagon-ftp', version: '2.2'],
             [group: 'org.apache.maven.wagon', name: 'wagon-scm', version: '2.2'],
             [group: 'org.apache.maven.wagon', name: 'wagon-file', version: '2.2'],
-            [group: 'org.apache.maven.wagon', name: 'wagon-webdav-jackrabbit', version: '2.2']
+            [group: 'org.apache.maven.wagon', name: 'wagon-webdav-jackrabbit', version: '2.2'],
     )
 }
 
