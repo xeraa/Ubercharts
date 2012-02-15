@@ -17,6 +17,7 @@
 package com.comsysto.insight.model;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Level;
@@ -41,7 +42,8 @@ import com.comsysto.insight.model.options.Symbol;
 import com.comsysto.insight.model.options.Tooltip;
 import com.comsysto.insight.model.options.series.generic.ISeries;
 
-public class Highchart {
+public class Highchart implements Serializable {
+	private static final long serialVersionUID = -4523815266142796274L;
 
 	private static Logger logger = Logger.getLogger("com.comsysto.insight.model.Highchart");
 
