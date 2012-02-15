@@ -89,6 +89,7 @@ uploadArchives {
     repositories.mavenDeployer {
         configuration = configurations.deployerJars
         pom.version = '0.2-SNAPSHOT'
+        pom.groupId = 'ubercharts'
         pom.artifactId = 'ubercharts'
         uniqueVersion = false
 
