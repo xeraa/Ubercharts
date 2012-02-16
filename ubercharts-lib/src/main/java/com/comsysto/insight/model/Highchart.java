@@ -26,6 +26,7 @@ import java.util.logging.Logger;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
+import org.codehaus.jackson.map.ser.StdSerializerProvider;
 
 import com.comsysto.insight.model.charts.Chart;
 import com.comsysto.insight.model.options.Axis;
@@ -47,7 +48,8 @@ public class Highchart implements Serializable {
 
 	private static Logger logger = Logger.getLogger("com.comsysto.insight.model.Highchart");
 
-	private ObjectMapper mapper = new ObjectMapper();
+	private ObjectMapper mapper = new ObjectMapper()
+			.setSerializerProvider(new StdSerializerProvider());
 
 	private Chart chart;
 	private String[] colors;
