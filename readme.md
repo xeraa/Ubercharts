@@ -10,32 +10,34 @@ Bug reports are more than welcome in [GitHub's bug tracker](https://github.com/x
 
 You can get [snapshots](https://repository-xeraa.forge.cloudbees.com/snapshot/) and [releases](https://repository-xeraa.forge.cloudbees.com/release/) for Ubercharts. To integrate them into your own POM add the following code (you might want to change the ``<version>``):
 
-	<repositories>
-	    <repository>
-	        <id>xeraa-cloudbees-release</id>
-	        <name>Cloudbees releases of xeraa</name>
-	        <url>dav:https://repository-xeraa.forge.cloudbees.com/release/</url>
-	        <releases>
-	            <enabled>true</enabled>
-	        </releases>
-	    </repository>
-	    <repository>
-	        <id>xeraa-cloudbees-snapshot</id>
-	        <name>Cloudbees snapshots of xeraa</name>
-	        <url>dav:https://repository-xeraa.forge.cloudbees.com/snapshot/</url>
-	        <snapshots>
-	            <enabled>true</enabled>
-	        </snapshots>
-	    </repository>
-	</repositories>
-	
-	<dependencies>
-	    <dependency>
-	        <groupId>ubercharts</groupId>
-	        <artifactId>ubercharts-lib</artifactId>
-	        <version>0.2-SNAPSHOT</version>
-	    </dependency>
-	</dependencies>
+```xml
+<repositories>
+    <repository>
+        <id>xeraa-cloudbees-release</id>
+        <name>Cloudbees releases of xeraa</name>
+        <url>dav:https://repository-xeraa.forge.cloudbees.com/release/</url>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+    </repository>
+    <repository>
+        <id>xeraa-cloudbees-snapshot</id>
+        <name>Cloudbees snapshots of xeraa</name>
+        <url>dav:https://repository-xeraa.forge.cloudbees.com/snapshot/</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>ubercharts</groupId>
+        <artifactId>ubercharts-lib</artifactId>
+        <version>0.2-SNAPSHOT</version>
+    </dependency>
+</dependencies>
+```
 
 Gist: [https://gist.github.com/1821832#file_pom.xml](https://gist.github.com/1821832#file_pom.xml)
 
@@ -125,24 +127,26 @@ To start the upload itself, run the following commands:
 
 If you have not yet included the Maven repository to which you have uploaded Ubercharts, include the following in your POM:
 
-	<repositories>
-	    <repository>
-	        <id>[ID]</id>
-	        <name>[Name]</name>
-	        <url>[Protocol, server URL, and path to the repository]</url>
-	        <snapshots>
-	            <enabled>true</enabled>
-	        </snapshots>
-	    </repository>
-	</repositories>
-	
-	<dependencies>
-	    <dependency>
-	        <groupId>Ubercharts</groupId>
-	        <artifactId>ubercharts</artifactId>
-	        <version>[version]</version>
-	    </dependency>
-	</dependencies>
+```xml
+<repositories>
+    <repository>
+        <id>[ID]</id>
+        <name>[Name]</name>
+        <url>[Protocol, server URL, and path to the repository]</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>Ubercharts</groupId>
+        <artifactId>ubercharts</artifactId>
+        <version>[version]</version>
+    </dependency>
+</dependencies>
+```
 
 Gist: [https://gist.github.com/1821940#file_pom.xml](https://gist.github.com/1821940#file_pom.xml)
 
@@ -157,60 +161,62 @@ To see a list of all available Gradle options run:
 
 The current list looks like this:
 
-	------------------------------------------------------------
-	All tasks runnable from root project
-	------------------------------------------------------------
-	
-	Build tasks
-	-----------
-	assemble - Assembles all Jar, War, Zip, and Tar archives.
-	build - Assembles and tests this project.
-	buildDependents - Assembles and tests this project and all projects that depend on it.
-	buildNeeded - Assembles and tests this project and all projects it depends on.
-	classes - Assembles the main classes.
-	clean - Deletes the build directory.
-	jar - Assembles a jar archive containing the main classes.
-	testClasses - Assembles the test classes.
-	war - Generates a war archive with all the compiled classes, the web-app content and the libraries.
-	
-	Documentation tasks
-	-------------------
-	javadoc - Generates Javadoc API documentation for the main source code.
-	
-	Help tasks
-	----------
-	dependencies - Displays the dependencies of root project 'Ubercharts'.
-	help - Displays a help message
-	projects - Displays the sub-projects of root project 'Ubercharts'.
-	properties - Displays the properties of root project 'Ubercharts'.
-	tasks - Displays the tasks runnable from root project 'Ubercharts' (some of the displayed tasks may belong to subprojects).
-	
-	IDE tasks
-	---------
-	cleanEclipse - Cleans all Eclipse files.
-	cleanIdea - Cleans IDEA project files (IML, IPR)
-	eclipse - Generates all Eclipse files.
-	idea - Generates IDEA project files (IML, IPR, IWS)
-	
-	Upload tasks
-	------------
-	uploadArchives - Uploads all artifacts belonging to configuration ':ubercharts-lib:archives'.
-	
-	Verification tasks
-	------------------
-	check - Runs all checks.
-	test - Runs the unit tests.
-	
-	Web application tasks
-	---------------------
-	jettyRun - Uses your files as and where they are and deploys them to Jetty.
-	jettyRunWar - Assembles the webapp into a war and deploys it to Jetty.
-	jettyStop - Stops Jetty.
-	
-	Other tasks
-	-----------
-	cleanIdeaWorkspace
-	install - Does a maven install of the archives artifacts into the local .m2 cache.
+```shell
+------------------------------------------------------------
+All tasks runnable from root project
+------------------------------------------------------------
+
+Build tasks
+-----------
+assemble - Assembles all Jar, War, Zip, and Tar archives.
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend on it.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+classes - Assembles the main classes.
+clean - Deletes the build directory.
+jar - Assembles a jar archive containing the main classes.
+testClasses - Assembles the test classes.
+war - Generates a war archive with all the compiled classes, the web-app content and the libraries.
+
+Documentation tasks
+-------------------
+javadoc - Generates Javadoc API documentation for the main source code.
+
+Help tasks
+----------
+dependencies - Displays the dependencies of root project 'Ubercharts'.
+help - Displays a help message
+projects - Displays the sub-projects of root project 'Ubercharts'.
+properties - Displays the properties of root project 'Ubercharts'.
+tasks - Displays the tasks runnable from root project 'Ubercharts' (some of the displayed tasks may belong to subprojects).
+
+IDE tasks
+---------
+cleanEclipse - Cleans all Eclipse files.
+cleanIdea - Cleans IDEA project files (IML, IPR)
+eclipse - Generates all Eclipse files.
+idea - Generates IDEA project files (IML, IPR, IWS)
+
+Upload tasks
+------------
+uploadArchives - Uploads all artifacts belonging to configuration ':ubercharts-lib:archives'.
+
+Verification tasks
+------------------
+check - Runs all checks.
+test - Runs the unit tests.
+
+Web application tasks
+---------------------
+jettyRun - Uses your files as and where they are and deploys them to Jetty.
+jettyRunWar - Assembles the webapp into a war and deploys it to Jetty.
+jettyStop - Stops Jetty.
+
+Other tasks
+-----------
+cleanIdeaWorkspace
+install - Does a maven install of the archives artifacts into the local .m2 cache.
+```
 
 
 
