@@ -64,6 +64,8 @@ Gradle will start to download all required dependencies and run a Jetty web serv
 
 ## Eclipse
 
+### Load
+
 To create all needed Eclipse Project files, run the following commands:
 
     cd Ubercharts
@@ -78,6 +80,17 @@ Now, open the ``ubercharts-lib`` and the ``example-page`` projects by following 
 * *Existing Projects into Workspace*
 * Set Root Directory to your local ``Ubercharts/example-page`` folder and repeat the same steps for ``Ubercharts/ubercharts-lib``
 * *Finish*
+
+
+
+### Run
+
+You can also run the project inside Eclipse. In the ``example-page`` project:
+
+* Right click on the file ``com.comsysto.insight.test.Start.java``
+* *Run As*
+* *Java Application*
+* The application should be available at [http://localhost:8080](http://localhost:8080)
 
 
 
