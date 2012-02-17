@@ -57,8 +57,10 @@ Gist: [https://gist.github.com/1821832#file_pom.xml](https://gist.github.com/182
 
 Invoke the following commands:
 
-    cd Ubercharts/example-page/
-    gradle jettyRun
+```shell
+cd Ubercharts/example-page/
+gradle jettyRun
+```
 
 Gradle will start to download all required dependencies and run a Jetty web server with the example page on it. You should be able to see the example page by visiting [http://localhost:8080/example-page](http://localhost:8080/example-page) in your browser.
 
@@ -70,8 +72,10 @@ Gradle will start to download all required dependencies and run a Jetty web serv
 
 To create all needed Eclipse Project files, run the following commands:
 
-    cd Ubercharts
-    gradle eclipse
+```shell
+cd Ubercharts
+gradle eclipse
+```
 
 Now, open the ``ubercharts-lib`` and the ``example-page`` projects by following these steps:
 
@@ -100,8 +104,10 @@ You can also run the project inside Eclipse. In the ``example-page`` project:
 
 To create all needed IntelliJ IDEA Project Files, run the following commands:
 
-    cd Ubercharts/
-    gradle idea
+```shell
+cd Ubercharts/
+gradle idea
+```
 
 Beside some other files, this will create a project file named ``Ubercharts.ipr`` in your ``Ubercharts`` directory. You can open this file with IntelliJ IDEA, in order to open the Ubercharts project.
 
@@ -111,15 +117,19 @@ Beside some other files, this will create a project file named ``Ubercharts.ipr`
 
 To upload the library to your own Maven repository, you need to create a custom configuration file in ``~/.gradle/gradle.properties``:
 
-	username=[username]
-	password=[password]
-    releaseurl=[URL]
-    snapshoturl=[URL]
+```properties
+username=[username]
+password=[password]
+releaseurl=[URL]
+snapshoturl=[URL]
+```
 
 To start the upload itself, run the following commands:
 
-    cd Ubercharts/ubercharts-lib/
-    gradle uploadArchives
+```shell
+cd Ubercharts/ubercharts-lib/
+gradle uploadArchives
+```
 
 
 
@@ -156,8 +166,10 @@ Gist: [https://gist.github.com/1821940#file_pom.xml](https://gist.github.com/182
 
 To see a list of all available Gradle options run:
 
-    cd Ubercharts/
-    gradle tasks
+```shell
+cd Ubercharts/
+gradle tasks
+```
 
 The current list looks like this:
 
