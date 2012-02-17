@@ -74,3 +74,12 @@ dependencies {
             [group: 'junit', name: 'junit', version: '4.10'],
     )
 }
+
+
+
+/* Display test results in the console */
+test {
+    afterTest { desc, result -> 
+        println "Executing test ${desc.name} [${desc.className}] with result: ${result.resultType}"
+    }
+}
