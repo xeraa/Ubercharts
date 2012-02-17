@@ -88,7 +88,7 @@ To create all needed IntelliJ IDEA Project Files, run the following commands:
     cd Ubercharts/
     gradle idea
 
-Beside some other files, this will create beside a project file named ``Ubercharts.ipr`` in your ``Ubercharts`` directory. You can open this file with IntelliJ IDEA, in order to open the Ubercharts project.
+Beside some other files, this will create a project file named ``Ubercharts.ipr`` in your ``Ubercharts`` directory. You can open this file with IntelliJ IDEA, in order to open the Ubercharts project.
 
 
 
