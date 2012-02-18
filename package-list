@@ -1,0 +1,6 @@
+com.comsysto.insight.component
+com.comsysto.insight.model
+com.comsysto.insight.model.charts
+com.comsysto.insight.model.options
+com.comsysto.insight.model.options.series.generic
+com.comsysto.insight.model.options.series.impl
