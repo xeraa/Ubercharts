@@ -64,6 +64,8 @@ Gist: [https://gist.github.com/1821832#file_pom.xml](https://gist.github.com/182
 
 Original repository: [https://github.com/comsysto/Ubercharts](https://github.com/comsysto/Ubercharts)
 
+While this wrapper is free software, Highcharts itself is not. Specifically, its use is not free for commercial use -- for details see [http://shop.highsoft.com/highcharts.html](http://shop.highsoft.com/highcharts.html).
+
 **Authors**
 
 * Daniel Bartl
