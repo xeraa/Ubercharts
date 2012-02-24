@@ -53,8 +53,8 @@ Gist: [https://gist.github.com/1821832#file_pom.xml](https://gist.github.com/182
 
 # History
 
-* **0.2** is the current version -- using Wicket 1.5 and Highcharts 2.1
-* **0.1** using Wicket 1.4 and Highcharts 2.0 is available in the original repository: [https://github.com/comsysto/Ubercharts](https://github.com/comsysto/Ubercharts)
+* **0.2 (update and fix):** is the current version -- using Wicket 1.5 and Highcharts 2.1
+* **0.1:** using Wicket 1.4 and Highcharts 2.0 is available in the original repository: [https://github.com/comsysto/Ubercharts](https://github.com/comsysto/Ubercharts)
 
 
 
