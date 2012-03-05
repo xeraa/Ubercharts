@@ -16,8 +16,11 @@
 
 package com.comsysto.insight.model.options.series.generic;
 
-import com.comsysto.insight.model.options.ChartType;
+import java.io.Serializable;
+
 import org.codehaus.jackson.annotate.JsonProperty;
+
+import com.comsysto.insight.model.options.ChartType;
 
 /**
  * Abstract implementation of ISeries, implementing all needed methods, except
@@ -35,7 +38,8 @@ import org.codehaus.jackson.annotate.JsonProperty;
  * @see com.comsysto.insight.model.options.series.impl.NumberSeries
  * @see com.comsysto.insight.model.options.series.impl.PointSeries
  */
-abstract public class AbstractSeries<DataType> implements ISeries<DataType> {
+abstract public class AbstractSeries<DataType> implements ISeries<DataType>, Serializable {
+	private static final long serialVersionUID = -2312927306951165455L;
 
 	/** {@link ISeries#getData()} */
 	protected DataType mData = null;
