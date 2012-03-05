@@ -48,7 +48,7 @@ public class Highchart implements Serializable {
 
 	private static Logger logger = Logger.getLogger("com.comsysto.insight.model.Highchart");
 
-	private ObjectMapper mapper = new ObjectMapper()
+	private static final ObjectMapper mapper = new ObjectMapper()
 			.setSerializerProvider(new StdSerializerProvider());
 
 	private Chart chart;
