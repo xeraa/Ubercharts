@@ -16,9 +16,11 @@
 
 package com.comsysto.insight.model.options;
 
+import java.io.Serializable;
 import java.util.Map;
 
-public class Credits {
+public class Credits implements Serializable {
+	private static final long serialVersionUID = -150246593742524533L;
 
 	private Boolean enabled;
 	private Position position;

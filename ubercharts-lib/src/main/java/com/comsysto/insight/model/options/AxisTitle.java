@@ -24,6 +24,7 @@ import java.util.Map;
  * @author Mohammed El Batya
  */
 public class AxisTitle extends BasicTitle {
+	private static final long serialVersionUID = -2273694966967110969L;
 
 	private Integer margin;
 	private Integer rotation;

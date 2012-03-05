@@ -16,13 +16,15 @@
 
 package com.comsysto.insight.model.options;
 
+import java.io.Serializable;
 import java.util.Map;
 
 /**
  * Created by IntelliJ IDEA. User: elbatya Date: 08/03/2011 Time: 15:24 To
  * change this template use File | Settings | File Templates.
  */
-public class Navigation {
+public class Navigation implements Serializable {
+	private static final long serialVersionUID = 3730930827716528975L;
 
 	private Map<String, String> mMenuStyle;
 	private Map<String, String> mMenuItemStyle;

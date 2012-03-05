@@ -19,6 +19,7 @@ package com.comsysto.insight.model.options;
 import java.util.Map;
 
 public class Subtitle extends BasicTitle {
+	private static final long serialVersionUID = -6644298870804389555L;
 
 	private Boolean mFloating;
 	private VerticalAlign mVerticalAlign;

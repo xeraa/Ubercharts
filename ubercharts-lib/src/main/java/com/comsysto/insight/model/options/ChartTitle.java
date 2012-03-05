@@ -16,9 +16,11 @@
 
 package com.comsysto.insight.model.options;
 
+import java.io.Serializable;
 import java.util.Map;
 
-public class ChartTitle extends Subtitle {
+public class ChartTitle extends Subtitle implements Serializable {
+	private static final long serialVersionUID = -7659910734257902430L;
 
 	private Integer margin;
 

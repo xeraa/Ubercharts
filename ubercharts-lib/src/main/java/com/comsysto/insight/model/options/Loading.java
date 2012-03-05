@@ -16,9 +16,11 @@
 
 package com.comsysto.insight.model.options;
 
+import java.io.Serializable;
 import java.util.Map;
 
-public class Loading {
+public class Loading implements Serializable {
+	private static final long serialVersionUID = -7233242996058427598L;
 
 	private Integer mHideDuration;
 	private Map<String, String> mLabelStyle;

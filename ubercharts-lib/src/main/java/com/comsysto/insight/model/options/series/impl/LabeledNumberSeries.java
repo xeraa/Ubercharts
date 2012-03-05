@@ -16,11 +16,11 @@
 
 package com.comsysto.insight.model.options.series.impl;
 
-import com.comsysto.insight.model.options.series.generic.AbstractSeries;
-
 import java.security.InvalidParameterException;
 import java.util.Map;
 import java.util.Set;
+
+import com.comsysto.insight.model.options.series.generic.AbstractSeries;
 
 /**
  * Implementation of {@link AbstractSeries} which represents an array of
@@ -39,6 +39,7 @@ import java.util.Set;
  * @author Mohammed El Batya
  */
 public class LabeledNumberSeries extends AbstractSeries<Object[][]> {
+	private static final long serialVersionUID = 6350112464877824567L;
 
 	/** {@link AbstractSeries#AbstractSeries()} */
 	public LabeledNumberSeries() {

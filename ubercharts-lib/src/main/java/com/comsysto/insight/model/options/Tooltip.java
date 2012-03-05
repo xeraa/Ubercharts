@@ -16,9 +16,11 @@
 
 package com.comsysto.insight.model.options;
 
+import java.io.Serializable;
 import java.util.Map;
 
-public class Tooltip {
+public class Tooltip implements Serializable {
+	private static final long serialVersionUID = 2474116536458766628L;
 
 	private String mBackgroundColor;
 	private String mBorderColor;

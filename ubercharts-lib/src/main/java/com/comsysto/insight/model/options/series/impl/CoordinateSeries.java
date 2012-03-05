@@ -16,10 +16,10 @@
 
 package com.comsysto.insight.model.options.series.impl;
 
-import com.comsysto.insight.model.options.series.generic.AbstractSeries;
-
 import java.util.Map;
 import java.util.Set;
+
+import com.comsysto.insight.model.options.series.generic.AbstractSeries;
 
 /**
  * Implementation of {@link AbstractSeries} which represents an array of
@@ -32,6 +32,7 @@ import java.util.Set;
  * @author Mohammed El Batya
  */
 public class CoordinateSeries extends AbstractSeries<Number[][]> {
+	private static final long serialVersionUID = 7946381116672456512L;
 
 	/** {@link AbstractSeries#AbstractSeries()} */
 	public CoordinateSeries() {

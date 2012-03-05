@@ -16,11 +16,14 @@
 
 package com.comsysto.insight.model.options;
 
+import java.io.Serializable;
+
 /**
  * Created by IntelliJ IDEA. User: elbatya Date: 08/03/2011 Time: 15:24 To
  * change this template use File | Settings | File Templates.
  */
-public class Exporting {
+public class Exporting implements Serializable {
+	private static final long serialVersionUID = -957957768846821980L;
 
 	private ExportingButtons mButtons;
 	private Boolean mEnabled;

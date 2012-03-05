@@ -16,12 +16,14 @@
 
 package com.comsysto.insight.model.options;
 
+import java.io.Serializable;
 import java.util.Map;
 
 /**
  * Created by IntelliJ IDEA. User: elbatya Date: 08/03/2011 Time: 16:53
  */
-class BasicTitle {
+class BasicTitle implements Serializable {
+	private static final long serialVersionUID = 9115314982573847674L;
 
 	private String mText;
 	private Align mAlign;

@@ -33,6 +33,7 @@ import com.comsysto.insight.model.options.series.generic.AbstractSeries;
  * @author Mohammed El Batya
  */
 public class MixedSeries extends AbstractSeries<Object[]> {
+	private static final long serialVersionUID = 1718508040394984863L;
 
 	/** {@link AbstractSeries#AbstractSeries()} */
 	public MixedSeries() {
