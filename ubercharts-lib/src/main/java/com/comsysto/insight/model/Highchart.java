@@ -47,6 +47,8 @@ public class Highchart implements Serializable {
 
 	private static Logger logger = Logger.getLogger("com.comsysto.insight.model.Highchart");
 
+	private static final transient ObjectMapper mapper = new ObjectMapper();
+
 	private Chart chart;
 	private String[] colors;
 	private Credits credits;
@@ -65,6 +67,7 @@ public class Highchart implements Serializable {
 	private Navigation navigation;
 
 	public Highchart() {
+		mapper.setSerializationInclusion(JsonSerialize.Inclusion.NON_EMPTY);
 	}
 
 	public Highchart(Chart pChart, ISeries<?>... pSeries) {
@@ -79,9 +82,6 @@ public class Highchart implements Serializable {
 	}
 
 	public String toJson() {
-		ObjectMapper mapper = new ObjectMapper();
-		mapper.setSerializationInclusion(JsonSerialize.Inclusion.NON_EMPTY);
-
 		String json = "";
 
 		try {
