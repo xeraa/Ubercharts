@@ -68,7 +68,7 @@ dependencies {
     /* These are the dependencies, which are needed to compile and run the project. */
     compile(
             [group: 'org.apache.wicket', name: 'wicket-core', version: '6.7.0'],
-            [group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.5'],
+            [group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.12'],
     )
 
     /* These are the dependencies, which are needed to test the project. */
