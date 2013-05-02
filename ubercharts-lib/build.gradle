@@ -83,7 +83,7 @@ dependencies {
             [group: 'org.apache.maven.wagon', name: 'wagon-ftp', version: '2.4'],
             [group: 'org.apache.maven.wagon', name: 'wagon-scm', version: '2.4'],
             [group: 'org.apache.maven.wagon', name: 'wagon-file', version: '2.4'],
-            [group: 'org.apache.maven.wagon', name: 'wagon-webdav-jackrabbit', version: '2.4'],
+            [group: 'org.apache.maven.wagon', name: 'wagon-webdav-jackrabbit', version: '1.0-beta-2'],
     )
 }
 
