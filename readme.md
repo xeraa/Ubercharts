@@ -2,7 +2,7 @@
 
 Ubercharts can be seen as a Java / Wicket based wrapper for the extremely powerful [Highcharts JS](http://www.highcharts.com) library. Ubercharts allows you to create Highcharts charts within your Wicket projects without touching even one single line of JavaScript code.
 
-You can see a live demo of the current version at [http://ubercharts.xeraa.cloudbees.net](http://ubercharts.xeraa.cloudbees.net), which should look something like the following image.
+You can see a live demo of the current version at [http://ubercharts.xeraa.cloudbees.net](http://ubercharts.xeraa.cloudbees.net), which should look like the following image.
 
 ![Ubercharts Preview](https://raw.github.com/xeraa/Ubercharts/master/preview.png)
 
@@ -42,7 +42,7 @@ You can get [snapshots](https://repository-xeraa.forge.cloudbees.com/snapshot/) 
     <dependency>
         <groupId>ubercharts</groupId>
         <artifactId>ubercharts-lib</artifactId>
-        <version>0.2-SNAPSHOT</version>
+        <version>0.3-SNAPSHOT</version>
     </dependency>
 </dependencies>
 ```
@@ -53,7 +53,8 @@ Gist: [https://gist.github.com/1821832#file_pom.xml](https://gist.github.com/182
 
 # History
 
-* **0.2 (update and fix):** is the current version -- using Wicket 1.5 and Highcharts 2.1
+* **0.3:** using Wicket 6.7 and Highcharts 2.1
+* **0.2:** using Wicket 1.5 and Highcharts 2.1
 * **0.1:** using Wicket 1.4 and Highcharts 2.0 is available in the original repository: [https://github.com/comsysto/Ubercharts](https://github.com/comsysto/Ubercharts)
 
 
