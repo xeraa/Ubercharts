@@ -71,10 +71,10 @@ dependencies {
     testCompile(
             [group: 'org.mortbay.jetty', name: 'jetty-util', version: '6.1.26'],
             [group: 'org.mortbay.jetty', name: 'jetty-management', version: '6.1.26'],
-            [group: 'junit', name: 'junit', version: '4.10'],
             [group: 'org.eclipse.jetty', name: 'jetty-http', version: '8.0.4.v20111024'],
             [group: 'org.eclipse.jetty', name: 'jetty-webapp', version: '8.0.4.v20111024'],
             [group: 'org.eclipse.jetty', name: 'jetty-server', version: '8.0.4.v20111024'],
+            [group: 'junit', name: 'junit', version: '4.11'],
     )
 }
 
