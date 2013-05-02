@@ -107,6 +107,14 @@ artifacts {
 
 
 
+install {
+    repositories.mavenInstaller {
+        pom.version = '0.3-SNAPSHOT'
+    }
+}
+
+
+
 uploadArchives {
     repositories.mavenDeployer {
         configuration = configurations.deployerJars
