@@ -110,8 +110,8 @@ artifacts {
 uploadArchives {
     repositories.mavenDeployer {
         configuration = configurations.deployerJars
-        pom.version = '0.2'
-        uniqueVersion = true
+        pom.version = '0.3-SNAPSHOT'
+        uniqueVersion = false
 
         /* $username and $password must be defined in ~/.gradle/gradle.properties or via Jenkins' environmental variables (ORG_GRADLE_PROJECT_username) */
         configureAuth = {
