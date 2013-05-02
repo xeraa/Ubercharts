@@ -63,7 +63,7 @@ dependencies {
     /* These are the dependencies, which are needed to compile and run the project. */
     compile(
             project(':ubercharts-lib'),
-            [group: 'org.apache.wicket', name: 'wicket-core', version: '1.5.4'],
+            [group: 'org.apache.wicket', name: 'wicket-core', version: '6.7.0'],
             [group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.6.4'],
     )
 
