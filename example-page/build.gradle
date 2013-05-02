@@ -70,10 +70,11 @@ dependencies {
     /* These are the dependencies, which are needed to test the project. */
     testCompile(
             [group: 'junit', name: 'junit', version: '4.11'],
-            [group: 'org.eclipse.jetty', name: 'jetty-util', version: '9.0.2.v20130417 '],
-            [group: 'org.eclipse.jetty', name: 'jetty-http', version: '9.0.2.v20130417 '],
+            [group: 'org.eclipse.jetty', name: 'jetty-util', version: '9.0.2.v20130417'],
+            [group: 'org.eclipse.jetty', name: 'jetty-http', version: '9.0.2.v20130417'],
             [group: 'org.eclipse.jetty', name: 'jetty-webapp', version: '9.0.2.v20130417'],
-            [group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.0.2.v20130417 '],
+            [group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.0.2.v20130417'],
+            [group: 'org.eclipse.jetty.orbit', name: 'javax.servlet', version: '3.0.0.v201112011016'],
     )
 }
 
